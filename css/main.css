@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --dark: #282923;
+  --Roboto: "Roboto", sans-serif;
+  --white: #ebedef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Roboto);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--dark);
+  padding: 20px 20px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+header nav ul li a {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+header a.logo {
+  margin-right: auto;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+button.collapsBtn {
+  display: none;
+  background-color: #282923;
+  border: none;
+  cursor: pointer;
+}
+
+button.collapsBtn:focus,
+button.collapsBtn:active {
+  outline: none;
+}
+
+button.collapsBtn i {
+  color: var(--white);
+  font-size: 25px;
+}
+
+section.banner {
+  min-height: 500px;
+  background-image: url("./../banner.jpg");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.banner h1 {
+  color: var(--white);
+  font-size: 30px;
+}
+
+section.banner h3 {
+  color: var(--white);
+  font-size: 20px;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+}
+
+section.banner form {
+  display: flex;
+  padding: 0.6rem 2rem;
+  background: var(--white);
+  border-radius: 2rem;
+}
+
+section.banner form input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+}
+
+section.banner form input:focus,
+section.banner form input:active {
+  outline: none;
+}
+
+section.banner form button {
+  border: none;
+  cursor: pointer;
+}
+
+section.banner form button:focus,
+section.banner form button:active {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  button.collapsBtn {
+    display: block;
+  }
+
+  ul.nav-items {
+    display: none;
+  }
+
+  section.banner {
+    justify-content: flex-start;
+  }
+
+  section.banner h1 {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+
+  section.banner h3 {
+    font-size: 16px;
+  }
+  section.banner form {
+    padding: 0 20px;
+  }
+}
