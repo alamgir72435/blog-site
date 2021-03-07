@@ -24,6 +24,13 @@
         </button>
       </nav>
     </header>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <section class="banner container">
       <h1>Wellcome to Agradut</h1>
       <h3>We are here to provide world class Training</h3>
@@ -32,7 +39,92 @@
         <button><i class="fa fa-search"></i></button>
       </form>
     </section>
-    <section class="posts"></section>
+
+    <section class="feature-post container">
+      <h1>Featured post</h1>
+      <div class="posts">
+        <div class="post">
+          <div class="post-image">
+            <img src="./post.png" alt="" />
+          </div>
+          <div class="post-body">
+            <h2>This is post title</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an type specimen book. It has survived
+              not only five centuries,
+            </p>
+          </div>
+          <div class="state">
+            <ul>
+              <li><a href="#">Posted by : Saif</a></li>
+              <li><a href="#">26 days ago</a></li>
+              <li><a href="#">245 comments</a></li>
+              <li><a href="#">likes 48</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-image">
+            <img src="./post.png" alt="" />
+          </div>
+          <div class="post-body">
+            <h2>This is post title</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an type specimen book. It has survived
+              not only five centuries,
+            </p>
+          </div>
+          <div class="state">
+            <ul>
+              <li><a href="#">Posted by : Saif</a></li>
+              <li><a href="#">26 days ago</a></li>
+              <li><a href="#">245 comments</a></li>
+              <li><a href="#">likes 48</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-image">
+            <img src="./post.png" alt="" />
+          </div>
+          <div class="post-body">
+            <h2>This is post title</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an type specimen book. It has survived
+              not only five centuries,
+            </p>
+          </div>
+          <div class="state">
+            <ul>
+              <li><a href="#">Posted by : Saif</a></li>
+              <li><a href="#">26 days ago</a></li>
+              <li><a href="#">245 comments</a></li>
+              <li><a href="#">likes 48</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer></footer>
+    <script>
+      document
+        .querySelector(".collapsBtn")
+        .addEventListener("click", function () {
+          // do some work
+          let nav = document.querySelector(".mobile-nav");
+          if (nav.classList.contains("open")) {
+            nav.classList.remove("open");
+          } else {
+            nav.classList.add("open");
+          }
+        });
+    </script>
   </body>
 </html>

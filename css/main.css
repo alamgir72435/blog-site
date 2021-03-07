@@ -75,6 +75,40 @@ button.collapsBtn i {
   font-size: 25px;
 }
 
+.mobile-nav {
+  width: 300px;
+  height: 100%;
+  background-color: #282923;
+  position: fixed;
+  left: -300px;
+  top: 40;
+  transition: all 0.3s ease-in-out;
+}
+
+.open {
+  left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav ul li {
+  border-top: 1px solid #fff;
+  padding: 15px 20px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.mobile-nav ul li:hover {
+  background-color: #265961;
+}
+
+.mobile-nav ul li a {
+  color: #ebedef;
+  display: block;
+  cursor: pointer;
+}
 section.banner {
   min-height: 500px;
   background-image: url("./../banner.jpg");
@@ -151,4 +185,68 @@ section.banner form button:active {
   section.banner form {
     padding: 0 20px;
   }
+
+  .posts {
+    flex-direction: column;
+  }
+}
+
+/* feartued post section  */
+
+.feature-post {
+  color: #282a36;
+}
+
+.feature-post h1 {
+  font-size: 2.2rem;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+}
+
+.posts .post {
+  margin: 10px;
+  line-height: 1.7;
+  box-shadow: 3px 4px 19px 4px rgba(0, 0, 0, 0.32);
+  padding: 10px;
+  position: relative;
+}
+
+.posts .post .post-image {
+  width: 100%;
+  height: 200px;
+}
+
+.posts .post .post-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.posts .post .post-body {
+  margin: 35px 0px;
+}
+.posts .post .post-body h2 {
+  padding: 10px 0px;
+}
+
+.posts .post .state {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.posts .post .state ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.posts .post .state ul li a {
+  font-size: 13px;
+  color: #282a36;
 }
